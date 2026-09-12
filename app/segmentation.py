@@ -11,7 +11,16 @@ from . import lexicon
 from .util import sentence_split
 
 CHAPTER_RE = re.compile(r"^\s*(?:##|CHAPTER)\s*[:\-]?\s*(.+?)\s*$")
-EVIDENCE_TAG_RE = re.compile(r"\[\[\s*SOURCE\s*:\s*(?P<author>[^|\]]+?)?\s*(?:\|\s*(?P<title>[^|\]]*?))?\s*(?:\|\s*(?P<year>[^|\]]*?))?\s*(?:\|\s*(?P<limit>[^\]]*?))?\s*\]\]", re.I)
+EVIDENCE_TAG_RE = re.compile(r"\[\[\s*SOURCE\s*:(.*?)\]\]", re.I | re.S)
+
+
+def _parse_evidence_meta(inner: str):
+    """inner = 'author | title | year | limit' (all parts optional)."""
+    parts = [p.strip() for p in inner.split("|")]
+    while len(parts) < 4:
+        parts.append(None)
+    author, title, year, limit = parts[0] or None, parts[1] or None, parts[2] or None, parts[3] or None
+    return {"author": author, "title": title, "year": year, "limit": limit}
 
 
 def parse_script(text: str):
@@ -59,16 +68,26 @@ def segment_script(script_text: str, narration: dict, options: dict | None = Non
     timing_mode = "word_timestamps" if narration.get("timing_mode") == "word_timestamps" else "estimated"
 
     blocks = parse_script(script_text)
-    # flatten to sentences with chapter tags
+    # flatten to sentences with chapter tags; [[SOURCE:...]] tags attach to the
+    # sentence they follow (evidence metadata travels with the claim)
     sentences = []
     for b in blocks:
-        for sent in sentence_split(b["line"]):
-            etag = EVIDENCE_TAG_RE.search(sent)
+        line = b["line"]
+        pos = 0
+        last_idx = None
+        for m in EVIDENCE_TAG_RE.finditer(line):
+            for sent in sentence_split(line[pos:m.start()]):
+                sentences.append({"chapter": b["chapter"], "text": sent.strip(),
+                                  "evidence_meta": None})
+                last_idx = len(sentences) - 1
+            if last_idx is not None:
+                sentences[last_idx]["evidence_meta"] = _parse_evidence_meta(m.group(1))
+            pos = m.end()
+        for sent in sentence_split(line[pos:]):
             clean = EVIDENCE_TAG_RE.sub("", sent).strip()
-            if not clean:
-                continue
-            sentences.append({"chapter": b["chapter"], "text": clean,
-                              "evidence_meta": etag.groupdict() if etag else None})
+            if clean:
+                sentences.append({"chapter": b["chapter"], "text": clean,
+                                  "evidence_meta": None})
 
     if not sentences:
         return []

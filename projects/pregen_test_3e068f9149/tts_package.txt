@@ -1,0 +1,7 @@
+# PRE-GENERATED TTS
+# voice: studio_narrator_v2
+audio: narration_master.wav
+
+## The Goalposts Never Stop Moving
+
+You know the feeling. You agree to something clear and specific, and two weeks later the request has quietly changed.

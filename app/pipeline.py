@@ -43,11 +43,22 @@ def resolve_narration(meta: dict, options: dict | None = None, log=print) -> dic
         p = os.path.join(meta["dir"], up["file"])
         if os.path.exists(p):
             pkg = tts.parse_tts_package(p, meta["dir"])
+            if pkg.get("text"):
+                # the supplied TXT is the AUTHORITATIVE narration text — adopt it
+                # as the project script (never rewritten or paraphrased)
+                if (meta.get("script") or "").strip() != pkg["text"].strip():
+                    meta["script"] = pkg["text"]
+                    projects.save(meta)
+                    log("narration: package text adopted as authoritative script")
             if pkg.get("audio_path"):
                 log("narration: using PRE-GENERATED TTS package audio")
                 return tts.adopt_audio(pkg["audio_path"], meta["dir"],
                                        word_timestamps=pkg.get("word_timestamps"), text=pkg["text"])
-            if pkg.get("text") and source == "pregenerated_tts_text":
+            if pkg.get("audio_ref") and not pkg.get("audio_path"):
+                raise RuntimeError(
+                    f"pre-generated TTS package references audio '{pkg['audio_ref']}' "
+                    f"but the file was not found — upload it via [ NARRATION AUDIO ]")
+            if pkg.get("text") and source in ("pregenerated_tts_text", "uploaded", "auto"):
                 log("narration: pre-generated TTS is text-only — synthesizing once from package text")
                 return _synthesize(meta, options, log, override_text=pkg["text"])
 

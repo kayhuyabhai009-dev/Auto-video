@@ -1,0 +1,18 @@
+[Script Info]
+; HUMAN SYSTEMS NOIR — subtitle engine
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Noir,DejaVu Sans,54,&H00D6E2E8,&H00A58E5E,&H28151311,&HA5151311,-1,0,0,0,100,100,0.0,0,1,2,1,2,40,40,96,1
+Style: Kicker,DejaVu Sans,29,&H0057A4D0,&H00A58E5E,&H28151311,&HA5151311,-1,0,0,0,100,100,2.0,0,1,2,0,2,40,40,96,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00,000,0:00:01,281,Noir,,0,0,0,,{\fad(140,120)}You know the feeling.
+Dialogue: 0,0:00:01,281,0:00:05,629,Noir,,0,0,0,,{\fad(140,120)}You agree to something clear and specific,\Nand two weeks later the request has
+Dialogue: 0,0:00:05,629,0:00:06,830,Noir,,0,0,0,,{\fad(140,120)}quietly {\c&H003D4AC9\b1}changed.{\r}

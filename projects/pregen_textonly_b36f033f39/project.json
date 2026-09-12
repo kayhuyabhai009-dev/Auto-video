@@ -1,0 +1,260 @@
+{
+  "project_id": "pregen_textonly_b36f033f39",
+  "title": "pregen_textonly",
+  "script": "placeholder",
+  "narration_source": "tts_api",
+  "preset": null,
+  "created_at": 1789236663.3755362,
+  "updated_at": 1789236686.8562763,
+  "narration": {
+    "path": "/home/user/Auto-video/projects/pregen_textonly_b36f033f39/narration_generated.wav",
+    "duration": 6.71,
+    "provider": "espeak_offline",
+    "timing_mode": "estimated",
+    "word_timestamps": [
+      {
+        "word": "You",
+        "start": 0.0,
+        "end": 0.2,
+        "estimated": true
+      },
+      {
+        "word": "know",
+        "start": 0.2,
+        "end": 0.467,
+        "estimated": true
+      },
+      {
+        "word": "the",
+        "start": 0.467,
+        "end": 0.667,
+        "estimated": true
+      },
+      {
+        "word": "feeling",
+        "start": 0.667,
+        "end": 1.281,
+        "estimated": true
+      },
+      {
+        "word": "You",
+        "start": 1.281,
+        "end": 1.481,
+        "estimated": true
+      },
+      {
+        "word": "agree",
+        "start": 1.481,
+        "end": 1.814,
+        "estimated": true
+      },
+      {
+        "word": "to",
+        "start": 1.814,
+        "end": 1.948,
+        "estimated": true
+      },
+      {
+        "word": "something",
+        "start": 1.948,
+        "end": 2.548,
+        "estimated": true
+      },
+      {
+        "word": "clear",
+        "start": 2.548,
+        "end": 2.881,
+        "estimated": true
+      },
+      {
+        "word": "and",
+        "start": 2.881,
+        "end": 3.082,
+        "estimated": true
+      },
+      {
+        "word": "specific",
+        "start": 3.082,
+        "end": 3.695,
+        "estimated": true
+      },
+      {
+        "word": "and",
+        "start": 3.695,
+        "end": 3.895,
+        "estimated": true
+      },
+      {
+        "word": "two",
+        "start": 3.895,
+        "end": 4.095,
+        "estimated": true
+      },
+      {
+        "word": "weeks",
+        "start": 4.095,
+        "end": 4.429,
+        "estimated": true
+      },
+      {
+        "word": "later",
+        "start": 4.429,
+        "end": 4.762,
+        "estimated": true
+      },
+      {
+        "word": "the",
+        "start": 4.762,
+        "end": 4.962,
+        "estimated": true
+      },
+      {
+        "word": "request",
+        "start": 4.962,
+        "end": 5.429,
+        "estimated": true
+      },
+      {
+        "word": "has",
+        "start": 5.429,
+        "end": 5.629,
+        "estimated": true
+      },
+      {
+        "word": "quietly",
+        "start": 5.629,
+        "end": 6.096,
+        "estimated": true
+      },
+      {
+        "word": "changed",
+        "start": 6.096,
+        "end": 6.71,
+        "estimated": true
+      }
+    ],
+    "placeholder": false,
+    "text": "You know the feeling. You agree to something clear and specific, and two weeks later the request has quietly changed.",
+    "source": "tts_api"
+  },
+  "uploaded_narration": {
+    "kind": "text",
+    "file": "tts_package.txt",
+    "orig_name": "narr_781b51e855.txt"
+  },
+  "segments": [
+    {
+      "text": "placeholder",
+      "start": 0.0,
+      "end": 6.71,
+      "words": [
+        {
+          "word": "placeholder",
+          "start": 0.0,
+          "end": 0.2,
+          "estimated": true
+        }
+      ],
+      "chapter": null,
+      "concepts": [],
+      "role": "HOOK_SIGNAL",
+      "role_confidence": 0.95,
+      "evidence": {
+        "has_source": false,
+        "has_limitation": false,
+        "year": null
+      },
+      "mg_candidates": [],
+      "segment_id": "seg_000",
+      "timing_mode": "estimated",
+      "emphasis_words": [],
+      "arc_position": 0.0,
+      "duration": 0.4
+    }
+  ],
+  "timeline": {
+    "segments": [
+      {
+        "segment_id": "seg_000",
+        "start": 0.0,
+        "end": 6.71,
+        "duration": 6.71,
+        "voiceover_summary": "placeholder",
+        "text": "placeholder",
+        "role": "HOOK_SIGNAL",
+        "emotion": "intrigued",
+        "concepts": [],
+        "visual_intent": {
+          "motif": "waveform",
+          "concepts": [],
+          "tint": "red"
+        },
+        "asset_id": "as_office_empty_night",
+        "asset_name": "office_empty_night.png",
+        "asset_type": "image",
+        "fallback": null,
+        "text_overlay": null,
+        "text_style": null,
+        "motion": {
+          "type": "static",
+          "amount": 0.0
+        },
+        "transition": {
+          "type": "fade_from_black",
+          "duration": 0.9,
+          "state_change": 0
+        },
+        "music": {
+          "mood": "hook",
+          "duck": true
+        },
+        "sfx": {
+          "asset_id": "as_riser_d53a",
+          "at": 0.0,
+          "volume": 0.5
+        },
+        "evidence_status": {
+          "has_source": false,
+          "has_limitation": false,
+          "year": null
+        },
+        "confidence": 0.78,
+        "human_review_reason": "word timings are estimated",
+        "locked": false,
+        "chapter": null,
+        "words": [
+          {
+            "word": "placeholder",
+            "start": 0.0,
+            "end": 0.2,
+            "estimated": true
+          }
+        ],
+        "timing_mode": "estimated",
+        "motion_graphic": null
+      }
+    ],
+    "review_flags": 1,
+    "target_ar": 1.7777777777777777,
+    "seed": 4113545622
+  },
+  "subtitles": null,
+  "render_result": {
+    "file": "/home/user/Auto-video/projects/pregen_textonly_b36f033f39/final.mp4",
+    "duration": 6.8,
+    "width": 1920,
+    "height": 1080,
+    "size_mb": 1.0
+  },
+  "render_settings": {
+    "resolution": "1920x1080",
+    "fps": 30
+  },
+  "status": "done",
+  "events": [
+    {
+      "t": 1789236663.4403472,
+      "msg": "narration resolved: espeak_offline 6.7s (estimated)"
+    }
+  ]
+}

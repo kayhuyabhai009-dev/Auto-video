@@ -1,0 +1,58 @@
+[Script Info]
+; HUMAN SYSTEMS NOIR — subtitle engine
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Noir,DejaVu Sans,54,&H00D6E2E8,&H00A58E5E,&H28151311,&HA5151311,-1,0,0,0,100,100,0.0,0,1,2,1,2,40,40,96,1
+Style: Kicker,DejaVu Sans,29,&H0057A4D0,&H00A58E5E,&H28151311,&HA5151311,-1,0,0,0,100,100,2.0,0,1,2,0,2,40,40,96,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00,000,0:00:01,565,Noir,,0,0,0,,{\fad(140,120)}You know the feeling.
+Dialogue: 0,0:00:01,565,0:00:06,589,Noir,,0,0,0,,{\fad(140,120)}You agree to something clear and specific,\Nand two weeks later the request has
+Dialogue: 0,0:00:06,589,0:00:07,489,Noir,,0,0,0,,{\fad(140,120)}quietly {\c&H003D4AC9\b1}changed.{\r}
+Dialogue: 0,0:00:07,334,0:00:12,343,Noir,,0,0,0,,{\fad(140,120)}This video breaks down why that pattern\Nfeels so destabilizing, what {\c&H0057A4D0\b1}research{\r} says
+Dialogue: 0,0:00:12,343,0:00:17,068,Noir,,0,0,0,,{\fad(140,120)}about it, and what you can actually do the\Nnext time it happens.
+Dialogue: 0,0:00:17,068,0:00:21,644,Noir,,0,0,0,,{\fad(140,120)}In this video, you will learn three facts\Nabout moving goalposts and one practical
+Dialogue: 0,0:00:21,644,0:00:23,210,Noir,,0,0,0,,{\fad(140,120)}playbook for handling them.
+Dialogue: 0,0:00:23,210,0:00:24,700,Noir,,0,0,0,,{\fad(140,120)}First, a definition.
+Dialogue: 0,0:00:24,700,0:00:30,603,Noir,,0,0,0,,{\fad(140,120)}Psychologists describe this as shifting\Nstandards: the terms of an {\c&H00A58E5E\b1}agreement{\r}
+Dialogue: 0,0:00:30,603,0:00:32,988,Noir,,0,0,0,,{\fad(140,120)}change after you have already accepted\Nthem.
+Dialogue: 0,0:00:32,988,0:00:35,314,Noir,,0,0,0,,{\fad(140,120)}The mechanism is simple {\c&H00A8A39B\b1}but{\r} effective.
+Dialogue: 0,0:00:35,314,0:00:40,784,Noir,,0,0,0,,{\fad(140,120)}When the {\c&H003D4AC9\b1}rules{\r} {\c&H00A58E5E\b1}move{\r} after commitment, your\Nmind re-opens a decision you believed was
+Dialogue: 0,0:00:40,784,0:00:45,152,Noir,,0,0,0,,{\fad(140,120)}closed, and each revision costs you\Nanother round of attention, time, and
+Dialogue: 0,0:00:45,152,0:00:46,052,Noir,,0,0,0,,{\fad(140,120)}trust.
+Dialogue: 0,0:00:45,674,0:00:50,518,Noir,,0,0,0,,{\fad(140,120)}{\c&H0057A4D0\b1}According{\r} to a 2016 {\c&H0057A4D0\b1}study{\r} {\c&H0057A4D0\b1}published{\r} in the\N{\c&H0057A4D0\b1}Journal{\r} of Personality and Social
+Dialogue: 0,0:00:50,518,0:00:56,049,Noir,,0,0,0,,{\fad(140,120)}Psychology, {\c&H0057A4D0\b1}participants{\r} who renegotiated\Nfair deals reported lower trust even when
+Dialogue: 0,0:00:56,049,0:00:58,061,Noir,,0,0,0,,{\fad(140,120)}the final outcome was identical.
+Dialogue: 0,0:00:58,061,0:01:03,979,Noir,,0,0,0,,{\fad(140,120)}For example, imagine a coworker asks you\Nto cover a shift on Friday.
+Dialogue: 0,0:01:03,979,0:01:09,599,Noir,,0,0,0,,{\fad(140,120)}You agree. On Wednesday, the request is\Nnow the whole weekend, and somehow your
+Dialogue: 0,0:01:09,599,0:01:12,580,Noir,,0,0,0,,{\fad(140,120)}original yes is treated as binding for the\Nnew version.
+Dialogue: 0,0:01:12,580,0:01:16,575,Noir,,0,0,0,,{\fad(140,120)}{\c&H00A8A39B\b1}But{\r} be careful before you {\c&H00A8A39B\b1}assume{\r} malice.\N{\c&H00A8A39B\b1}Alternative{\r} explanations are common.
+Dialogue: 0,0:01:16,575,0:01:20,451,Noir,,0,0,0,,{\fad(140,120)}The coworker {\c&H00A8A39B\b1}may{\r} simply be overwhelmed,\Nthe schedule {\c&H00A8A39B\b1}may{\r} have {\c&H003D4AC9\b1}changed{\r} for
+Dialogue: 0,0:01:20,451,0:01:25,698,Noir,,0,0,0,,{\fad(140,120)}operational reasons, or the request {\c&H00A8A39B\b1}may{\r}\Nreflect poor planning rather than
+Dialogue: 0,0:01:25,698,0:01:26,598,Noir,,0,0,0,,{\fad(140,120)}strategy.
+Dialogue: 0,0:01:26,309,0:01:32,749,Noir,,0,0,0,,{\fad(140,120)}If you have felt that slow burn of a\Nmoving target, it makes sense. Many people
+Dialogue: 0,0:01:32,749,0:01:35,775,Noir,,0,0,0,,{\fad(140,120)}feel exactly this and blame themselves\Nfirst.
+Dialogue: 0,0:01:41,320,0:01:45,509,Noir,,0,0,0,,{\fad(140,120)}That is the fingerprint of goalpost\Nmovement, {\c&H00A8A39B\b1}not{\r} ordinary schedule chaos.
+Dialogue: 0,0:01:45,509,0:01:47,834,Noir,,0,0,0,,{\fad(140,120)}So what can you do? Use the playbook.
+Dialogue: 0,0:01:47,834,0:01:52,097,Noir,,0,0,0,,{\fad(140,120)}{\c&H00A58E5E\b1}Step{\r} one: {\c&H00A58E5E\b1}notice.{\r} {\c&H00A58E5E\b1}Ask{\r} yourself one\Nquestion. Is the request changing?
+Dialogue: 0,0:01:52,097,0:01:55,630,Noir,,0,0,0,,{\fad(140,120)}{\c&H00A58E5E\b1}Step{\r} two: {\c&H00A58E5E\b1}regulate.{\r} Don't answer\Nimmediately. {\c&H00A58E5E\b1}Step{\r} three: {\c&H00A58E5E\b1}verify.{\r}
+Dialogue: 0,0:01:55,630,0:02:00,326,Noir,,0,0,0,,{\fad(140,120)}{\c&H00A58E5E\b1}Ask{\r} for the original {\c&H00A58E5E\b1}agreement.{\r} Restate\Nwhat you both accepted. {\c&H00A58E5E\b1}Step{\r} four:
+Dialogue: 0,0:02:00,326,0:02:01,226,Noir,,0,0,0,,{\fad(140,120)}{\c&H00A58E5E\b1}boundary.{\r}
+Dialogue: 0,0:02:00,549,0:02:07,645,Noir,,0,0,0,,{\fad(140,120)}{\c&H00A58E5E\b1}State{\r} what you {\c&H00A58E5E\b1}agreed{\r} to, in writing if\Nneeded. {\c&H00A58E5E\b1}Step{\r} five: {\c&H00A58E5E\b1}build.{\r} Continue only if
+Dialogue: 0,0:02:07,645,0:02:09,523,Noir,,0,0,0,,{\fad(140,120)}the {\c&H00A58E5E\b1}agreement{\r} is respected.
+Dialogue: 0,0:02:09,523,0:02:13,608,Noir,,0,0,0,,{\fad(140,120)}One {\c&H00A8A39B\b1}limitation{\r} deserves honesty. Most of\Nthis {\c&H0057A4D0\b1}evidence{\r} is correlational.
+Dialogue: 0,0:02:13,608,0:02:18,199,Noir,,0,0,0,,{\fad(140,120)}{\c&H0057A4D0\b1}Researchers{\r} {\c&H00A8A39B\b1}cannot{\r} {\c&H00A58E5E\b1}say{\r} why the {\c&H003D4AC9\b1}rules{\r}\Nmoved, only that the pattern reliably
+Dialogue: 0,0:02:18,199,0:02:19,183,Noir,,0,0,0,,{\fad(140,120)}damages trust.
+Dialogue: 0,0:02:19,183,0:02:24,877,Noir,,0,0,0,,{\fad(140,120)}To recap: {\c&H00A58E5E\b1}notice{\r} the shift, {\c&H00A58E5E\b1}regulate{\r}\Nbefore responding, {\c&H00A58E5E\b1}verify{\r} the original
+Dialogue: 0,0:02:24,877,0:02:28,171,Noir,,0,0,0,,{\fad(140,120)}terms, {\c&H00A58E5E\b1}state{\r} your {\c&H00A58E5E\b1}boundary,{\r} and {\c&H00A58E5E\b1}build{\r} only\Non respected agreements.
+Dialogue: 0,0:02:28,171,0:02:35,550,Noir,,0,0,0,,{\fad(140,120)}You do {\c&H00A8A39B\b1}not{\r} need to win every negotiation.\NYou just need the terms to stop moving.
+Dialogue: 0,0:02:35,550,0:02:40,425,Noir,,0,0,0,,{\fad(140,120)}In the next video, we look at reciprocity\N{\c&H003D4AC9\b1}pressure:{\r} how small favors quietly become
+Dialogue: 0,0:02:40,425,0:02:41,781,Noir,,0,0,0,,{\fad(140,120)}large obligations.
+Dialogue: 0,0:02:41,781,0:02:45,508,Noir,,0,0,0,,{\fad(140,120)}Until then, keep your agreements in\Nwriting and your {\c&H00A58E5E\b1}boundaries{\r} in view.
