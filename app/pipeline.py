@@ -15,7 +15,7 @@ Narration source priority (never generate TTS twice):
 """
 import os, time
 from . import paths, settings, tts, segmentation, decision_engine, asset_library, projects, renderer
-from .util import probe
+from .util import probe, read_json
 
 
 def resolve_narration(meta: dict, options: dict | None = None, log=print) -> dict:

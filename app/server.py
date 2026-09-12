@@ -493,7 +493,7 @@ def rebuild_subs(pid: str, body: dict):
     return {"ok": True, **res}
 
 
-import segmentation as _segmod  # noqa: E402
+from . import segmentation as _segmod  # noqa: E402
 
 
 @app.post("/api/segmentation/preview")

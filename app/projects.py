@@ -25,8 +25,8 @@ def list_projects() -> list:
 
 def _summary(pid, meta) -> dict:
     final = os.path.join(paths.PROJECTS_DIR, pid, "final.mp4")
-    from .util import probe
-    dur = meta.get("narration", {}).get("duration", 0)
+    narr = meta.get("narration") or {}
+    dur = narr.get("duration", 0) if isinstance(narr, dict) else 0
     return {
         "project_id": pid,
         "title": meta.get("title", pid),

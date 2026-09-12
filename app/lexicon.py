@@ -126,6 +126,7 @@ ROLE_CUES = {
     "PROMISE": [
         (r"\b(in this video|today (we|you)|by the end|you'?ll (learn|know|understand)|"
          r"we'?ll (cover|break down|look at)|let'?s break)\b", 3),
+        (r"\b(this video|today'?s video)\b", 3.5),
         (r"\b(what you can do|how to (spot|handle|respond)|three (facts|reasons|things)|"
          r"\b(five|four|two|three)\b.*\b(facts|reasons|signs|things|patterns))\b", 2),
     ],
@@ -341,8 +342,13 @@ ROLE_COLOR = {
 import re as _re
 
 
+def _rx(phrase: str):
+    """Word-bounded literal phrase pattern (prevents 'fee' matching 'feeling')."""
+    return _re.compile(r"(?<![A-Za-z0-9])" + _re.escape(phrase) + r"(?![A-Za-z0-9])", _re.I)
+
+
 def _compile(entries):
-    return [(c, [_re.compile(p, _re.I) for p in phrases]) for c, phrases in entries.items()]
+    return [(c, [_rx(p) for p in phrases]) for c, phrases in entries.items()]
 
 
 _CONCEPT_COMPILED = _compile(CONCEPT_LEXICON)
