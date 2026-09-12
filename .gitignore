@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+projects/*/work/
+projects/*/previews/
+data/thumbs/
+data/*.jpg
+*.log
+.venv/

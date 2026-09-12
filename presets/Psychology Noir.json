@@ -1,0 +1,127 @@
+{
+  "name": "Psychology Noir",
+  "description": "Warmer study-led tone: more amber evidence cards, gentler cuts.",
+  "style": {
+    "palette": {
+      "obsidian": "#111315",
+      "charcoal": "#20252A",
+      "bone": "#E8E2D6",
+      "oxide_red": "#C94A3D",
+      "signal_blue": "#5E8EA5",
+      "muted_amber": "#D0A457",
+      "uncertainty_gray": "#9BA3A8"
+    },
+    "fonts": {
+      "primary": "DejaVu Sans",
+      "bold": "DejaVu Sans Bold",
+      "mono": "DejaVu Sans Mono"
+    },
+    "mood": "tense but not paranoid; atmospheric but not horror"
+  },
+  "render": {
+    "resolution": "1920x1080",
+    "fps": 30,
+    "crf": 20,
+    "preset": "medium",
+    "transition_mode": "filter",
+    "tail_seconds": 0.6
+  },
+  "subtitles": {
+    "mode": "selective",
+    "max_chars": 42,
+    "max_lines": 2,
+    "position": "bottom",
+    "font": "DejaVu Sans",
+    "size": 52,
+    "bold": true,
+    "accent_colors": true,
+    "animation": "fade"
+  },
+  "music": {
+    "mode": "auto",
+    "base_volume": 0.26,
+    "ducking": {
+      "enabled": true,
+      "threshold": 0.02,
+      "ratio": 8,
+      "attack": 120,
+      "release": 900
+    },
+    "fade_in": 2.0,
+    "fade_out": 3.5
+  },
+  "transitions": {
+    "weights": {
+      "hard_cut": 42,
+      "fade": 26,
+      "dissolve": 4,
+      "zoom": 8,
+      "slide": 6,
+      "blur": 6,
+      "flash": 1,
+      "glitch": 0,
+      "light_leak": 2,
+      "evidence_pivot": 12
+    },
+    "max_duration": 0.6
+  },
+  "effects": {
+    "grain": {
+      "enabled": true,
+      "opacity": 0.1
+    },
+    "vignette": {
+      "enabled": true,
+      "opacity": 0.55
+    },
+    "dust": {
+      "enabled": true,
+      "opacity": 0.28,
+      "loop": true
+    },
+    "letterbox": {
+      "enabled": true,
+      "ratio": 2.0
+    },
+    "scanlines": {
+      "enabled": false,
+      "opacity": 0.1
+    }
+  },
+  "motion_graphics": {
+    "enabled": true,
+    "min_gap_seconds": 8.0,
+    "max_per_video": 14
+  },
+  "asset_rules": {
+    "repetition": {
+      "min_gap_segments": 4,
+      "max_reuse": 3,
+      "same_category_limit": 3
+    },
+    "scoring": {
+      "semantic_match": 0.45,
+      "scene_match": 0.2,
+      "format_match": 0.1,
+      "duration_match": 0.1,
+      "diversity": 0.1,
+      "quality": 0.05,
+      "recent_use_penalty": 0.35,
+      "reuse_penalty": 0.15
+    }
+  },
+  "animation": {
+    "ken_burns_range": [
+      0.03,
+      0.08
+    ],
+    "static_chance": 0.18
+  },
+  "tts": {
+    "provider": "espeak_offline",
+    "espeak_voice": "en-us+f3",
+    "espeak_rate": 168,
+    "speed": 1.0,
+    "pitch": 0.0
+  }
+}
