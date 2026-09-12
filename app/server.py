@@ -250,14 +250,12 @@ def mg_preview(template: str, title: str = "Sample headline for this card", kick
 
 def _png_bytes(img):
     import io
+    from PIL import Image
     b = io.BytesIO()
     bg = Image.new("RGB", img.size, (17, 19, 21))
     bg.paste(img, (0, 0), img)
     bg.save(b, "PNG")
     return b.getvalue()
-
-
-from PIL import Image as _PILImage
 
 
 # ------------------------------------------------------------------ projects
