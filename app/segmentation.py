@@ -32,7 +32,7 @@ def parse_script(text: str):
 def _sentence_word_spans(sent, word_iter, words_used):
     """Assign narration word timings to a sentence's words in order."""
     import re as _re
-    toks = _re.findall(r"[\w']+", sent)
+    toks = _re.findall(r"[\w']+(?:['-][\w']+)*[,.;:!?…]*", sent)
     spans = []
     for t in toks:
         if words_used < len(word_iter):

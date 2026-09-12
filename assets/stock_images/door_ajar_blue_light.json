@@ -1,0 +1,21 @@
+{
+  "asset_id": "as_door_ajar_blue_light",
+  "tags": [
+    "door",
+    "hallway",
+    "exit",
+    "light",
+    "dark",
+    "boundary"
+  ],
+  "semantic_tags": [
+    "door",
+    "exit",
+    "boundary",
+    "privacy"
+  ],
+  "source": "generated_starter",
+  "license_status": "owned",
+  "quality": 0.85,
+  "notes": "Starter library image generated locally at setup. Original, safe to delete or replace with your own stock."
+}

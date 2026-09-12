@@ -1,0 +1,22 @@
+{
+  "asset_id": "as_city_rain_window",
+  "tags": [
+    "window",
+    "rain",
+    "city",
+    "night",
+    "bokeh",
+    "glass"
+  ],
+  "semantic_tags": [
+    "window",
+    "rain",
+    "city",
+    "night",
+    "loneliness"
+  ],
+  "source": "generated_starter",
+  "license_status": "owned",
+  "quality": 0.85,
+  "notes": "Starter library image generated locally at setup. Original, safe to delete or replace with your own stock."
+}

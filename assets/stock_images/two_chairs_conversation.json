@@ -1,0 +1,21 @@
+{
+  "asset_id": "as_two_chairs_conversation",
+  "tags": [
+    "chairs",
+    "conversation",
+    "room",
+    "light",
+    "wide",
+    "empty"
+  ],
+  "semantic_tags": [
+    "conversation",
+    "social",
+    "trust",
+    "work"
+  ],
+  "source": "generated_starter",
+  "license_status": "owned",
+  "quality": 0.85,
+  "notes": "Starter library image generated locally at setup. Original, safe to delete or replace with your own stock."
+}

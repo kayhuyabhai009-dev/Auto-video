@@ -67,6 +67,7 @@ def build_ass(timeline, out_path, subtitle_cfg=None, narration_meta=None):
     mode = cfg.get("mode", "selective")
     header = _style_header(cfg)
     events = []
+    cues = []
     selective_roles = {"HOOK_SIGNAL", "PROMISE", "MECHANISM", "PRACTICAL_MOVE", "SOURCE",
                        "COUNTEREXAMPLE", "RECAP", "DEFINITION", "EMOTIONAL_RECOGNITION", "LIMITATION",
                        "PROBLEM", "NEXT_WATCH"}
@@ -88,14 +89,18 @@ def build_ass(timeline, out_path, subtitle_cfg=None, narration_meta=None):
             cue_lines = lines[i:i + per_cue]
             t0 = cue_lines[0][0]["start"]
             t1 = cue_lines[-1][-1]["end"] + 0.12
-            # extend to next cue start if close (avoid flashing)
-            if i + per_cue < len(lines):
-                nxt = lines[i + per_cue][0]["start"]
-                t1 = min(max(t1, nxt - 0.05), nxt)
             body_lines = [_accented(ln, cfg.get("accent_colors", True), anim) for ln in cue_lines]
             text = "\\N".join(body_lines)
-            fx = _anim_tags(anim, t0, t1, cfg)
-            events.append(f"Dialogue: 0,{fmt_ts(t0, comma=True)},{fmt_ts(t1, comma=True)},Noir,,0,0,0,,{fx}{text}")
+            cues.append([t0, t1, text])
+    # pass 2: extend to next cue start (no flashing); keep min on-screen time
+    for j, (t0, t1, text) in enumerate(cues):
+        nxt = cues[j + 1][0] if j + 1 < len(cues) else None
+        if nxt is not None:
+            t1 = min(max(t1, min(nxt - 0.04, t0 + 0.9)), nxt)
+        if t1 - t0 < 0.9:
+            t1 = t0 + (1.4 if nxt is None else min(1.4, max(0.9, nxt - t0)))
+        fx = _anim_tags(anim, t0, t1, cfg)
+        events.append(f"Dialogue: 0,{fmt_ts(t0, comma=True)},{fmt_ts(t1, comma=True)},Noir,,0,0,0,,{fx}{text}")
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(header + "\n" + "\n".join(events) + "\n")
     return {"path": out_path, "events": len(events), "mode": mode}

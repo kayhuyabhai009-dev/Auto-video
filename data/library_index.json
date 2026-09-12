@@ -21,7 +21,7 @@
     "quality": 0.7,
     "enabled": true,
     "file_size": 1601350,
-    "mtime": 1789214263.421759,
+    "mtime": 1789235366.8727589,
     "added_at": 1789215669.4404151
   },
   "as_hookpulse_d7307": {
@@ -46,7 +46,7 @@
     "quality": 0.7,
     "enabled": true,
     "file_size": 881415,
-    "mtime": 1789214272.2777452,
+    "mtime": 1789235366.8767588,
     "added_at": 1789215669.4441116
   },
   "as_nearsilence_125402": {
@@ -71,7 +71,7 @@
     "quality": 0.7,
     "enabled": true,
     "file_size": 1201154,
-    "mtime": 1789214268.7857506,
+    "mtime": 1789235366.8767588,
     "added_at": 1789215669.4470828
   },
   "as_noirpulse_15fec8": {
@@ -96,7 +96,7 @@
     "quality": 0.7,
     "enabled": true,
     "file_size": 1441480,
-    "mtime": 1789214261.0537627,
+    "mtime": 1789235366.880679,
     "added_at": 1789215669.4499345
   },
   "as_opentape_173707": {
@@ -121,7 +121,7 @@
     "quality": 0.7,
     "enabled": true,
     "file_size": 1521415,
-    "mtime": 1789214266.3137546,
+    "mtime": 1789235366.880679,
     "added_at": 1789215669.452748
   },
   "as_resolvewarm_15fec8": {
@@ -146,7 +146,7 @@
     "quality": 0.7,
     "enabled": true,
     "file_size": 1441480,
-    "mtime": 1789214270.9457474,
+    "mtime": 1789235366.8847775,
     "added_at": 1789215669.4555964
   },
   "as_sparsetension_1561a": {
@@ -171,7 +171,7 @@
     "quality": 0.7,
     "enabled": true,
     "file_size": 1401252,
-    "mtime": 1789214267.6977525,
+    "mtime": 1789235366.8847775,
     "added_at": 1789215669.4584966
   },
   "as_lightleakwarm_34fc0": {
@@ -200,7 +200,7 @@
     "quality": 0.7,
     "enabled": true,
     "file_size": 217024,
-    "mtime": 1789214284.205727,
+    "mtime": 1789235366.888876,
     "added_at": 1789215669.461343
   },
   "as_scanlines_2322": {
@@ -227,7 +227,7 @@
     "quality": 0.7,
     "enabled": true,
     "file_size": 8994,
-    "mtime": 1789214283.9697273,
+    "mtime": 1789235366.888876,
     "added_at": 1789215669.48408
   },
   "as_bokehlayer_5b7fd": {
@@ -255,7 +255,7 @@
     "quality": 0.7,
     "enabled": true,
     "file_size": 374781,
-    "mtime": 1789214283.9137275,
+    "mtime": 1789235366.888876,
     "added_at": 1789215669.5066977
   },
   "as_dustscreen_128e9": {
@@ -283,7 +283,7 @@
     "quality": 0.7,
     "enabled": true,
     "file_size": 76009,
-    "mtime": 1789214285.2257254,
+    "mtime": 1789235366.888876,
     "added_at": 1789215669.5395885
   },
   "as_click_c69": {
@@ -308,7 +308,7 @@
     "quality": 0.7,
     "enabled": true,
     "file_size": 3177,
-    "mtime": 1789214283.0257287,
+    "mtime": 1789235366.888876,
     "added_at": 1789215669.5447278
   },
   "as_door_3d64": {
@@ -333,7 +333,7 @@
     "quality": 0.7,
     "enabled": true,
     "file_size": 15716,
-    "mtime": 1789214283.0457287,
+    "mtime": 1789235366.888876,
     "added_at": 1789215669.5487864
   },
   "as_impactsoft_4730": {
@@ -358,7 +358,7 @@
     "quality": 0.7,
     "enabled": true,
     "file_size": 18224,
-    "mtime": 1789214283.1537287,
+    "mtime": 1789235366.888876,
     "added_at": 1789215669.5516636
   },
   "as_page_275a": {
@@ -383,7 +383,7 @@
     "quality": 0.7,
     "enabled": true,
     "file_size": 10074,
-    "mtime": 1789214283.1777287,
+    "mtime": 1789235366.888876,
     "added_at": 1789215669.5545554
   },
   "as_paper_4730": {
@@ -408,7 +408,7 @@
     "quality": 0.7,
     "enabled": true,
     "file_size": 18224,
-    "mtime": 1789214283.0177288,
+    "mtime": 1789235366.888876,
     "added_at": 1789215669.5572703
   },
   "as_riser_d53a": {
@@ -433,7 +433,7 @@
     "quality": 0.7,
     "enabled": true,
     "file_size": 54586,
-    "mtime": 1789214283.1217287,
+    "mtime": 1789235366.888876,
     "added_at": 1789215669.5601134
   },
   "as_roomtone_2f4e7": {
@@ -458,8 +458,392 @@
     "quality": 0.7,
     "enabled": true,
     "file_size": 193767,
-    "mtime": 1789214283.3417282,
+    "mtime": 1789235366.888876,
     "added_at": 1789215669.5629582
+  },
+  "as_city_rain_window": {
+    "asset_id": "as_city_rain_window",
+    "filename": "city_rain_window.png",
+    "path": "/home/user/Auto-video/assets/stock_images/city_rain_window.png",
+    "rel_path": "assets/stock_images/city_rain_window.png",
+    "type": "image",
+    "category": "stock_images",
+    "duration": 0.0,
+    "width": 1376,
+    "height": 768,
+    "aspect_ratio": "1.79",
+    "orientation": "landscape",
+    "fps": 25.0,
+    "tags": [
+      "bokeh",
+      "city",
+      "glass",
+      "night",
+      "rain",
+      "window"
+    ],
+    "semantic_tags": [
+      "city",
+      "loneliness",
+      "night",
+      "rain",
+      "window"
+    ],
+    "source": "generated_starter",
+    "license_status": "owned",
+    "notes": "Starter library image generated locally at setup. Original, safe to delete or replace with your own stock.",
+    "usage_count": 0,
+    "quality": 0.85,
+    "enabled": true,
+    "file_size": 2039228,
+    "mtime": 1789235615.6451426,
+    "added_at": 1789235655.2658255
+  },
+  "as_clock_dim_room": {
+    "asset_id": "as_clock_dim_room",
+    "filename": "clock_dim_room.png",
+    "path": "/home/user/Auto-video/assets/stock_images/clock_dim_room.png",
+    "rel_path": "assets/stock_images/clock_dim_room.png",
+    "type": "image",
+    "category": "stock_images",
+    "duration": 0.0,
+    "width": 1376,
+    "height": 768,
+    "aspect_ratio": "1.79",
+    "orientation": "landscape",
+    "fps": 25.0,
+    "tags": [
+      "amber",
+      "clock",
+      "dark",
+      "dim",
+      "room",
+      "time",
+      "wall"
+    ],
+    "semantic_tags": [
+      "attention",
+      "clock",
+      "deadline",
+      "pressure"
+    ],
+    "source": "generated_starter",
+    "license_status": "owned",
+    "notes": "Starter library image generated locally at setup. Original, safe to delete or replace with your own stock.",
+    "usage_count": 0,
+    "quality": 0.85,
+    "enabled": true,
+    "file_size": 1881553,
+    "mtime": 1789235619.4492002,
+    "added_at": 1789235655.2907138
+  },
+  "as_document_agreement_signed": {
+    "asset_id": "as_document_agreement_signed",
+    "filename": "document_agreement_signed.png",
+    "path": "/home/user/Auto-video/assets/stock_images/document_agreement_signed.png",
+    "rel_path": "assets/stock_images/document_agreement_signed.png",
+    "type": "image",
+    "category": "stock_images",
+    "duration": 0.0,
+    "width": 1376,
+    "height": 768,
+    "aspect_ratio": "1.79",
+    "orientation": "landscape",
+    "fps": 25.0,
+    "tags": [
+      "agreement",
+      "desk",
+      "document",
+      "paper",
+      "pen",
+      "red thread",
+      "signature",
+      "signed"
+    ],
+    "semantic_tags": [
+      "agreement",
+      "document",
+      "moving_goalposts",
+      "pressure",
+      "signature"
+    ],
+    "source": "generated_starter",
+    "license_status": "owned",
+    "notes": "Starter library image generated locally at setup. Original, safe to delete or replace with your own stock.",
+    "usage_count": 0,
+    "quality": 0.85,
+    "enabled": true,
+    "file_size": 1903134,
+    "mtime": 1789235595.132832,
+    "added_at": 1789235655.3176394
+  },
+  "as_door_ajar_blue_light": {
+    "asset_id": "as_door_ajar_blue_light",
+    "filename": "door_ajar_blue_light.png",
+    "path": "/home/user/Auto-video/assets/stock_images/door_ajar_blue_light.png",
+    "rel_path": "assets/stock_images/door_ajar_blue_light.png",
+    "type": "image",
+    "category": "stock_images",
+    "duration": 0.0,
+    "width": 1376,
+    "height": 768,
+    "aspect_ratio": "1.79",
+    "orientation": "landscape",
+    "fps": 25.0,
+    "tags": [
+      "ajar",
+      "blue",
+      "boundary",
+      "dark",
+      "door",
+      "exit",
+      "hallway",
+      "light"
+    ],
+    "semantic_tags": [
+      "boundary",
+      "door",
+      "exit",
+      "privacy"
+    ],
+    "source": "generated_starter",
+    "license_status": "owned",
+    "notes": "Starter library image generated locally at setup. Original, safe to delete or replace with your own stock.",
+    "usage_count": 0,
+    "quality": 0.85,
+    "enabled": true,
+    "file_size": 1920429,
+    "mtime": 1789235584.7486746,
+    "added_at": 1789235655.347327
+  },
+  "as_hands_resting_desk": {
+    "asset_id": "as_hands_resting_desk",
+    "filename": "hands_resting_desk.png",
+    "path": "/home/user/Auto-video/assets/stock_images/hands_resting_desk.png",
+    "rel_path": "assets/stock_images/hands_resting_desk.png",
+    "type": "image",
+    "category": "stock_images",
+    "duration": 0.0,
+    "width": 1376,
+    "height": 768,
+    "aspect_ratio": "1.79",
+    "orientation": "landscape",
+    "fps": 25.0,
+    "tags": [
+      "calm",
+      "closeup",
+      "desk",
+      "hands",
+      "notebook",
+      "pen",
+      "resting"
+    ],
+    "semantic_tags": [
+      "conversation",
+      "desk",
+      "hands",
+      "notebook"
+    ],
+    "source": "generated_starter",
+    "license_status": "owned",
+    "notes": "Starter library image generated locally at setup. Original, safe to delete or replace with your own stock.",
+    "usage_count": 0,
+    "quality": 0.85,
+    "enabled": true,
+    "file_size": 2102234,
+    "mtime": 1789235583.1406503,
+    "added_at": 1789235655.3757734
+  },
+  "as_laptop_glowing_dark": {
+    "asset_id": "as_laptop_glowing_dark",
+    "filename": "laptop_glowing_dark.png",
+    "path": "/home/user/Auto-video/assets/stock_images/laptop_glowing_dark.png",
+    "rel_path": "assets/stock_images/laptop_glowing_dark.png",
+    "type": "image",
+    "category": "stock_images",
+    "duration": 0.0,
+    "width": 1376,
+    "height": 768,
+    "aspect_ratio": "1.79",
+    "orientation": "landscape",
+    "fps": 25.0,
+    "tags": [
+      "blue",
+      "computer",
+      "dark",
+      "desk",
+      "glowing",
+      "laptop",
+      "screen"
+    ],
+    "semantic_tags": [
+      "computer",
+      "message",
+      "online",
+      "work"
+    ],
+    "source": "generated_starter",
+    "license_status": "owned",
+    "notes": "Starter library image generated locally at setup. Original, safe to delete or replace with your own stock.",
+    "usage_count": 0,
+    "quality": 0.85,
+    "enabled": true,
+    "file_size": 1610251,
+    "mtime": 1789235639.9735112,
+    "added_at": 1789235655.402964
+  },
+  "as_notebook_annotations": {
+    "asset_id": "as_notebook_annotations",
+    "filename": "notebook_annotations.png",
+    "path": "/home/user/Auto-video/assets/stock_images/notebook_annotations.png",
+    "rel_path": "assets/stock_images/notebook_annotations.png",
+    "type": "image",
+    "category": "stock_images",
+    "duration": 0.0,
+    "width": 1376,
+    "height": 768,
+    "aspect_ratio": "1.79",
+    "orientation": "landscape",
+    "fps": 25.0,
+    "tags": [
+      "annotations",
+      "desk",
+      "notebook",
+      "notes",
+      "pen",
+      "research"
+    ],
+    "semantic_tags": [
+      "desk",
+      "document",
+      "evidence",
+      "notebook"
+    ],
+    "source": "generated_starter",
+    "license_status": "owned",
+    "notes": "Starter library image generated locally at setup. Original, safe to delete or replace with your own stock.",
+    "usage_count": 0,
+    "quality": 0.85,
+    "enabled": true,
+    "file_size": 2044041,
+    "mtime": 1789235620.0852098,
+    "added_at": 1789235655.4260614
+  },
+  "as_office_empty_night": {
+    "asset_id": "as_office_empty_night",
+    "filename": "office_empty_night.png",
+    "path": "/home/user/Auto-video/assets/stock_images/office_empty_night.png",
+    "rel_path": "assets/stock_images/office_empty_night.png",
+    "type": "image",
+    "category": "stock_images",
+    "duration": 0.0,
+    "width": 1376,
+    "height": 768,
+    "aspect_ratio": "1.79",
+    "orientation": "landscape",
+    "fps": 25.0,
+    "tags": [
+      "city",
+      "desk",
+      "empty",
+      "night",
+      "office",
+      "wide",
+      "window"
+    ],
+    "semantic_tags": [
+      "city",
+      "desk",
+      "loneliness",
+      "night",
+      "work"
+    ],
+    "source": "generated_starter",
+    "license_status": "owned",
+    "notes": "Starter library image generated locally at setup. Original, safe to delete or replace with your own stock.",
+    "usage_count": 0,
+    "quality": 0.85,
+    "enabled": true,
+    "file_size": 1802166,
+    "mtime": 1789235620.9292226,
+    "added_at": 1789235655.451499
+  },
+  "as_phone_message_glow": {
+    "asset_id": "as_phone_message_glow",
+    "filename": "phone_message_glow.png",
+    "path": "/home/user/Auto-video/assets/stock_images/phone_message_glow.png",
+    "rel_path": "assets/stock_images/phone_message_glow.png",
+    "type": "image",
+    "category": "stock_images",
+    "duration": 0.0,
+    "width": 1376,
+    "height": 768,
+    "aspect_ratio": "1.79",
+    "orientation": "landscape",
+    "fps": 25.0,
+    "tags": [
+      "closeup",
+      "dark",
+      "desk",
+      "glow",
+      "message",
+      "notification",
+      "phone",
+      "screen"
+    ],
+    "semantic_tags": [
+      "attention",
+      "message",
+      "phone",
+      "pressure"
+    ],
+    "source": "generated_starter",
+    "license_status": "owned",
+    "notes": "Starter library image generated locally at setup. Original, safe to delete or replace with your own stock.",
+    "usage_count": 0,
+    "quality": 0.85,
+    "enabled": true,
+    "file_size": 1697201,
+    "mtime": 1789235586.608703,
+    "added_at": 1789235655.4751184
+  },
+  "as_two_chairs_conversation": {
+    "asset_id": "as_two_chairs_conversation",
+    "filename": "two_chairs_conversation.png",
+    "path": "/home/user/Auto-video/assets/stock_images/two_chairs_conversation.png",
+    "rel_path": "assets/stock_images/two_chairs_conversation.png",
+    "type": "image",
+    "category": "stock_images",
+    "duration": 0.0,
+    "width": 1376,
+    "height": 768,
+    "aspect_ratio": "1.79",
+    "orientation": "landscape",
+    "fps": 25.0,
+    "tags": [
+      "chairs",
+      "conversation",
+      "empty",
+      "light",
+      "room",
+      "two",
+      "wide"
+    ],
+    "semantic_tags": [
+      "conversation",
+      "social",
+      "trust",
+      "work"
+    ],
+    "source": "generated_starter",
+    "license_status": "owned",
+    "notes": "Starter library image generated locally at setup. Original, safe to delete or replace with your own stock.",
+    "usage_count": 0,
+    "quality": 0.85,
+    "enabled": true,
+    "file_size": 1723652,
+    "mtime": 1789235643.0855584,
+    "added_at": 1789235655.4992933
   },
   "as_charcoalgradient_2c": {
     "asset_id": "as_charcoalgradient_2c",
@@ -486,7 +870,7 @@
     "quality": 0.7,
     "enabled": true,
     "file_size": 180357,
-    "mtime": 1789214283.541728,
+    "mtime": 1789235366.888876,
     "added_at": 1789215669.5658863
   },
   "as_concretecool_66fc2": {
@@ -514,7 +898,7 @@
     "quality": 0.7,
     "enabled": true,
     "file_size": 421826,
-    "mtime": 1789214283.7057278,
+    "mtime": 1789235366.888876,
     "added_at": 1789215669.5683074
   },
   "as_fogfield_9dce": {
@@ -542,7 +926,7 @@
     "quality": 0.7,
     "enabled": true,
     "file_size": 40398,
-    "mtime": 1789214283.597728,
+    "mtime": 1789235366.8929744,
     "added_at": 1789215669.5711088
   },
   "as_paperwarm_49c6c": {
@@ -570,7 +954,7 @@
     "quality": 0.7,
     "enabled": true,
     "file_size": 302188,
-    "mtime": 1789214283.4377282,
+    "mtime": 1789235366.8929744,
     "added_at": 1789215669.5734131
   }
 }

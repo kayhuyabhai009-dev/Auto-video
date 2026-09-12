@@ -1,0 +1,21 @@
+{
+  "asset_id": "as_hands_resting_desk",
+  "tags": [
+    "hands",
+    "desk",
+    "notebook",
+    "pen",
+    "closeup",
+    "calm"
+  ],
+  "semantic_tags": [
+    "hands",
+    "desk",
+    "notebook",
+    "conversation"
+  ],
+  "source": "generated_starter",
+  "license_status": "owned",
+  "quality": 0.85,
+  "notes": "Starter library image generated locally at setup. Original, safe to delete or replace with your own stock."
+}

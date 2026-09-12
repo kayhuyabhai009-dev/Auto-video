@@ -294,12 +294,17 @@ def score_asset(asset: dict, concepts: list, role: str, beat: float, target_ar: 
 
 def candidates(concepts: list, role: str, beat: float, target_ar: float,
                usage: dict, last_used_pos: dict, position: int,
-               kinds=("image", "video"), exclude=None) -> list:
-    """Ranked candidate list [(score, breakdown, asset)] for a segment."""
+               kinds=("image", "video"), exclude=None,
+               categories=("stock_images", "stock_videos")) -> list:
+    """Ranked candidate list [(score, breakdown, asset)] for a segment.
+    Scene selection draws only from photographic/video categories — overlays,
+    particles and transitions are LAYER materials, never scene content."""
     reps = settings.get("repetition.max_reuse", 3)
     out = []
     for a in all_assets():
         if a["type"] not in kinds:
+            continue
+        if categories and a["category"] not in categories:
             continue
         if exclude and a["asset_id"] in exclude:
             continue

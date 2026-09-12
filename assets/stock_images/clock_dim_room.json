@@ -1,0 +1,20 @@
+{
+  "asset_id": "as_clock_dim_room",
+  "tags": [
+    "clock",
+    "time",
+    "wall",
+    "dark",
+    "amber"
+  ],
+  "semantic_tags": [
+    "clock",
+    "deadline",
+    "pressure",
+    "attention"
+  ],
+  "source": "generated_starter",
+  "license_status": "owned",
+  "quality": 0.85,
+  "notes": "Starter library image generated locally at setup. Original, safe to delete or replace with your own stock."
+}

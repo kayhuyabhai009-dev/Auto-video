@@ -1,0 +1,23 @@
+{
+  "asset_id": "as_office_empty_night",
+  "tags": [
+    "office",
+    "night",
+    "desk",
+    "window",
+    "city",
+    "empty",
+    "wide"
+  ],
+  "semantic_tags": [
+    "work",
+    "loneliness",
+    "desk",
+    "night",
+    "city"
+  ],
+  "source": "generated_starter",
+  "license_status": "owned",
+  "quality": 0.85,
+  "notes": "Starter library image generated locally at setup. Original, safe to delete or replace with your own stock."
+}
