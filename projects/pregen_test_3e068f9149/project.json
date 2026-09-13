@@ -1,0 +1,147 @@
+{
+  "project_id": "pregen_test_3e068f9149",
+  "title": "pregen_test",
+  "script": "placeholder",
+  "narration_source": "uploaded",
+  "preset": null,
+  "created_at": 1789236578.5585537,
+  "updated_at": 1789236640.7055,
+  "narration": {
+    "path": "/home/user/Auto-video/projects/pregen_test_3e068f9149/narration.wav",
+    "duration": 10.31,
+    "provider": "user_provided",
+    "timing_mode": "estimated",
+    "word_timestamps": [
+      {
+        "word": "placeholder",
+        "start": 0.0,
+        "end": 10.31,
+        "estimated": true
+      }
+    ],
+    "placeholder": false,
+    "text": "placeholder"
+  },
+  "uploaded_narration": {
+    "kind": "audio",
+    "file": "narration_audio.wav",
+    "orig_name": "narr_eeb892877c.wav"
+  },
+  "segments": [
+    {
+      "text": "placeholder",
+      "start": 0.0,
+      "end": 10.31,
+      "words": [
+        {
+          "word": "placeholder",
+          "start": 0.0,
+          "end": 10.31,
+          "estimated": true
+        }
+      ],
+      "chapter": null,
+      "concepts": [],
+      "role": "HOOK_SIGNAL",
+      "role_confidence": 0.95,
+      "evidence": {
+        "has_source": false,
+        "has_limitation": false,
+        "year": null
+      },
+      "mg_candidates": [],
+      "segment_id": "seg_000",
+      "timing_mode": "estimated",
+      "emphasis_words": [],
+      "arc_position": 0.0,
+      "duration": 10.31
+    }
+  ],
+  "timeline": {
+    "segments": [
+      {
+        "segment_id": "seg_000",
+        "start": 0.0,
+        "end": 10.31,
+        "duration": 10.31,
+        "voiceover_summary": "placeholder",
+        "text": "placeholder",
+        "role": "HOOK_SIGNAL",
+        "emotion": "intrigued",
+        "concepts": [],
+        "visual_intent": {
+          "motif": "waveform",
+          "concepts": [],
+          "tint": "red"
+        },
+        "asset_id": "as_city_rain_window",
+        "asset_name": "city_rain_window.png",
+        "asset_type": "image",
+        "fallback": null,
+        "text_overlay": null,
+        "text_style": null,
+        "motion": {
+          "type": "zoom_out",
+          "amount": 0.038,
+          "speed": 1.0,
+          "duration": 10.31
+        },
+        "transition": {
+          "type": "fade_from_black",
+          "duration": 0.9,
+          "state_change": 0
+        },
+        "music": {
+          "mood": "hook",
+          "duck": true
+        },
+        "sfx": {
+          "asset_id": "as_riser_d53a",
+          "at": 0.0,
+          "volume": 0.5
+        },
+        "evidence_status": {
+          "has_source": false,
+          "has_limitation": false,
+          "year": null
+        },
+        "confidence": 0.78,
+        "human_review_reason": "word timings are estimated",
+        "locked": false,
+        "chapter": null,
+        "words": [
+          {
+            "word": "placeholder",
+            "start": 0.0,
+            "end": 10.31,
+            "estimated": true
+          }
+        ],
+        "timing_mode": "estimated",
+        "motion_graphic": null
+      }
+    ],
+    "review_flags": 1,
+    "target_ar": 1.7777777777777777,
+    "seed": 386963359
+  },
+  "subtitles": null,
+  "render_result": {
+    "file": "/home/user/Auto-video/projects/pregen_test_3e068f9149/final.mp4",
+    "duration": 10.4,
+    "width": 1920,
+    "height": 1080,
+    "size_mb": 3.5
+  },
+  "render_settings": {
+    "resolution": "1920x1080",
+    "fps": 30
+  },
+  "status": "done",
+  "events": [
+    {
+      "t": 1789236599.8634434,
+      "msg": "narration resolved: user_provided 10.3s (estimated)"
+    }
+  ]
+}

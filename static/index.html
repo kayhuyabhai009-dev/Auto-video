@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auto Video Producer — Human Systems Noir</title>
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%23111315'/><rect x='3' y='3' width='10' height='10' fill='%23C94A3D'/></svg>">
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="brand">
+      <div class="mark"></div>
+      <h1>AUTO VIDEO PRODUCER</h1>
+      <span class="sub">Human Systems Noir · Evidence-Led</span>
+    </div>
+    <nav class="tabs" id="tabs">
+      <button data-view="produce" class="active">Produce</button>
+      <button data-view="projects">Projects</button>
+      <button data-view="timeline">Timeline</button>
+      <button data-view="library">Library</button>
+      <button data-view="templates">Graphics</button>
+      <button data-view="presets">Presets</button>
+      <button data-view="settings">Settings</button>
+    </nav>
+    <div class="header-right">
+      <span class="pill" id="pill-narration">TTS: —</span>
+      <span class="pill" id="pill-library">Library: —</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================== PRODUCE ============================== -->
+    <section class="view active" id="view-produce">
+      <div class="workflow" id="wf-steps"></div>
+
+      <div class="grid2">
+        <div class="panel">
+          <h2>Script <span class="hint">[ SCRIPT ] — authoritative narration text</span></h2>
+          <div class="row">
+            <label class="f"><span>Saved scripts</span>
+              <select id="script-select"><option value="">— choose —</option></select>
+            </label>
+            <label class="f"><span>…or upload .txt</span>
+              <input type="file" id="script-file" accept=".txt,.md">
+            </label>
+          </div>
+          <label class="f"><span>Script text (chapter lines start with ## — evidence tags: [[SOURCE: author | title | year | limit]])</span>
+            <textarea id="script-text" rows="12" placeholder="Paste or load a script…"></textarea>
+          </label>
+          <div class="row">
+            <div class="dim small" id="script-stats">—</div>
+            <button class="btn small" id="btn-seg-preview" style="flex:none">Preview segmentation</button>
+            <button class="btn small" id="btn-save-script" style="flex:none">Save to library</button>
+          </div>
+          <div id="seg-preview" style="margin-top:10px"></div>
+        </div>
+
+        <div>
+          <div class="panel">
+            <h2>Narration source</h2>
+            <div class="radio-row" id="narr-radios">
+              <label>
+                <input type="radio" name="narrsrc" value="tts_api" checked>
+                <span><span class="t">Generate using TTS API</span><br>
+                <span class="d">Configured provider synthesizes narration. Audio becomes the master timeline.</span></span>
+              </label>
+              <label>
+                <input type="radio" name="narrsrc" value="uploaded">
+                <span><span class="t">Use uploaded / pre-generated narration</span><br>
+                <span class="d">Pre-generated TTS (.txt package) or narration audio (.wav .mp3 .m4a .flac). No TTS call will be made.</span></span>
+              </label>
+              <label>
+                <input type="radio" name="narrsrc" value="project_existing">
+                <span><span class="t">Use existing project narration</span><br>
+                <span class="d">Reuse narration already stored in a project (never regenerates).</span></span>
+              </label>
+            </div>
+            <hr class="sep">
+            <div class="grid2">
+              <div class="narration-box" id="box-tts-txt">
+                <div class="big">[ PRE-GENERATED TTS ]</div>
+                <div class="small dim">drop .txt package / JSON</div>
+                <div class="small faint mono" id="tts-txt-name">none</div>
+              </div>
+              <div class="narration-box" id="box-tts-audio">
+                <div class="big">[ NARRATION AUDIO ]</div>
+                <div class="small dim">drop .wav .mp3 .m4a .flac</div>
+                <div class="small faint mono" id="tts-audio-name">none</div>
+              </div>
+            </div>
+            <div class="note blue" id="narr-status">Narration status: nothing loaded. TTS API will be used.</div>
+          </div>
+
+          <div class="panel">
+            <h2>Style &amp; output</h2>
+            <div class="row">
+              <label class="f"><span>Preset</span><select id="preset-select"></select></label>
+              <label class="f"><span>Project title</span><input type="text" id="proj-title" placeholder="goalposts_001"></label>
+            </div>
+            <div class="row" style="align-items:center">
+              <button class="btn primary" id="btn-generate" style="justify-content:center; padding:13px">
+                <span class="dot"></span> GENERATE VIDEO
+              </button>
+              <button class="btn" id="btn-render-only" title="Re-render from existing timeline (no TTS, no re-planning)">RE-RENDER ONLY</button>
+            </div>
+            <div class="note amber small" id="current-project-note">No project selected — generating creates a new project.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Pipeline monitor <span class="hint" id="progress-stage">idle</span></h2>
+        <div id="log">Waiting for a generation job…</div>
+      </div>
+
+      <div class="panel" id="result-panel" style="display:none">
+        <h2>Result</h2>
+        <div class="player-wrap"><video id="result-video" controls preload="metadata"></video></div>
+        <div class="player-meta" id="result-meta"></div>
+        <div style="margin-top:10px; display:flex; gap:10px">
+          <button class="btn small" id="btn-open-timeline">Inspect timeline</button>
+          <button class="btn small" id="btn-copy-review">Copy review flags</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== PROJECTS ============================== -->
+    <section class="view" id="view-projects">
+      <div class="panel">
+        <h2>Projects <span class="hint">reopening reuses stored narration — never regenerates TTS</span></h2>
+        <div class="proj-grid" id="proj-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============================== TIMELINE ============================== -->
+    <section class="view" id="view-timeline">
+      <div class="panel">
+        <h2>Timeline <span class="hint" id="tl-title">no project loaded</span></h2>
+        <div class="row" style="align-items:center; margin-bottom:8px">
+          <select id="tl-project" style="flex:none; width:280px"></select>
+          <span class="dim small" id="tl-stats"></span>
+          <span style="flex:1"></span>
+          <button class="btn small" id="btn-rebuild-tl">Rebuild timeline (no TTS)</button>
+          <button class="btn small amber" id="btn-render-tl">Render video</button>
+        </div>
+        <div id="tl-strip"></div>
+        <div class="player-wrap" style="margin-top:6px"><video id="tl-video" controls preload="metadata"></video></div>
+      </div>
+      <div class="seg-detail" id="seg-detail">
+        <div class="panel" id="seg-info"><h2>Segment</h2><div class="ghost-note">Select a scene above</div></div>
+        <div class="panel" id="seg-edit"><h2>Advanced edit</h2><div class="ghost-note">Select a scene above</div></div>
+      </div>
+    </section>
+
+    <!-- ============================== LIBRARY ============================== -->
+    <section class="view" id="view-library">
+      <div class="panel">
+        <h2>Asset Library <span class="hint">the producer works ONLY from these assets — missing visuals degrade, never get invented</span></h2>
+        <div class="lib-toolbar">
+          <input type="text" id="lib-q" placeholder="search filename / tag…">
+          <select id="lib-kind">
+            <option value="">all types</option>
+            <option value="image">images</option>
+            <option value="video">videos</option>
+            <option value="music">music</option>
+            <option value="sfx">sound effects</option>
+            <option value="font">fonts</option>
+          </select>
+          <select id="lib-tag"><option value="">all tags</option></select>
+          <button class="btn small" id="btn-lib-scan">Rescan</button>
+          <span style="flex:1"></span>
+          <select id="lib-upload-cat" style="width:auto">
+            <option value="stock_images">→ stock_images</option>
+            <option value="stock_videos">→ stock_videos</option>
+            <option value="background_music">→ background_music</option>
+            <option value="sound_effects">→ sound_effects</option>
+            <option value="textures">→ textures</option>
+            <option value="overlays">→ overlays</option>
+            <option value="particles">→ particles</option>
+            <option value="transitions">→ transitions</option>
+            <option value="fonts">→ fonts</option>
+          </select>
+          <input type="file" id="lib-upload" multiple style="width:auto">
+        </div>
+        <div class="asset-grid" id="asset-grid"></div>
+        <div class="dim small" id="lib-count" style="margin-top:12px"></div>
+      </div>
+    </section>
+
+    <!-- ============================== TEMPLATES ============================== -->
+    <section class="view" id="view-templates">
+      <div class="panel">
+        <h2>Motion graphic templates <span class="hint">information cards — never subtitles · editable JSON in assets/motion_graphics/templates/</span></h2>
+        <div class="tpl-grid" id="tpl-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============================== PRESETS ============================== -->
+    <section class="view" id="view-presets">
+      <div class="grid2">
+        <div class="panel">
+          <h2>Presets</h2>
+          <div id="preset-list"></div>
+        </div>
+        <div class="panel">
+          <h2>Save current configuration as preset</h2>
+          <label class="f"><span>Name</span><input type="text" id="preset-name" placeholder="My Channel Noir"></label>
+          <label class="f"><span>Description</span><input type="text" id="preset-desc"></label>
+          <button class="btn" id="btn-preset-save">Save preset</button>
+          <div class="note">A preset captures palette, subtitle style, music, transitions, global effects, motion-graphics rules, asset rules, animation, resolution, FPS and TTS settings. Configure once — then SELECT SCRIPT → SELECT PRESET → GENERATE.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== SETTINGS ============================== -->
+    <section class="view" id="view-settings">
+      <div class="set-grid" id="settings-grid"></div>
+      <div style="position:sticky; bottom:0; background:linear-gradient(0deg, var(--obsidian) 60%, transparent); padding:16px 0; display:flex; gap:10px">
+        <button class="btn primary" id="btn-settings-save">Save all settings</button>
+        <button class="btn" id="btn-tts-test">Test TTS voice</button>
+        <span class="dim small" id="tts-test-result" style="align-self:center"></span>
+      </div>
+    </section>
+  </main>
+</div>
+<div id="toast-zone"></div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

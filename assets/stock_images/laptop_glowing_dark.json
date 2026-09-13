@@ -1,0 +1,21 @@
+{
+  "asset_id": "as_laptop_glowing_dark",
+  "tags": [
+    "laptop",
+    "computer",
+    "screen",
+    "desk",
+    "dark",
+    "blue"
+  ],
+  "semantic_tags": [
+    "computer",
+    "online",
+    "message",
+    "work"
+  ],
+  "source": "generated_starter",
+  "license_status": "owned",
+  "quality": 0.85,
+  "notes": "Starter library image generated locally at setup. Original, safe to delete or replace with your own stock."
+}

@@ -1,0 +1,11 @@
+# PRE-GENERATED TTS
+# Drop this file into the [ PRE-GENERATED TTS ] box on the Produce tab.
+# The narration below is treated as the AUTHORITATIVE narration text.
+# If you also supply the audio file (audio: line below), it becomes the
+# MASTER timeline and NO TTS API call is ever made.
+
+# audio: my_master_narration.wav
+
+## Chapter One
+
+You know the feeling. You agree to something clear and specific, and two weeks later the request has quietly changed.

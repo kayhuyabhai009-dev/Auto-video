@@ -1,0 +1,569 @@
+{
+  "project_id": "pregen_textonly2_7b6fc6caed",
+  "title": "pregen_textonly2",
+  "script": "You know the feeling. You agree to something clear and specific, and two weeks later the request has quietly changed.",
+  "narration_source": "tts_api",
+  "preset": null,
+  "created_at": 1789236736.4642055,
+  "updated_at": 1789236762.667798,
+  "narration": {
+    "path": "/home/user/Auto-video/projects/pregen_textonly2_7b6fc6caed/narration_generated.wav",
+    "duration": 6.71,
+    "provider": "espeak_offline",
+    "timing_mode": "estimated",
+    "word_timestamps": [
+      {
+        "word": "You",
+        "start": 0.0,
+        "end": 0.2,
+        "estimated": true
+      },
+      {
+        "word": "know",
+        "start": 0.2,
+        "end": 0.467,
+        "estimated": true
+      },
+      {
+        "word": "the",
+        "start": 0.467,
+        "end": 0.667,
+        "estimated": true
+      },
+      {
+        "word": "feeling",
+        "start": 0.667,
+        "end": 1.281,
+        "estimated": true
+      },
+      {
+        "word": "You",
+        "start": 1.281,
+        "end": 1.481,
+        "estimated": true
+      },
+      {
+        "word": "agree",
+        "start": 1.481,
+        "end": 1.814,
+        "estimated": true
+      },
+      {
+        "word": "to",
+        "start": 1.814,
+        "end": 1.948,
+        "estimated": true
+      },
+      {
+        "word": "something",
+        "start": 1.948,
+        "end": 2.548,
+        "estimated": true
+      },
+      {
+        "word": "clear",
+        "start": 2.548,
+        "end": 2.881,
+        "estimated": true
+      },
+      {
+        "word": "and",
+        "start": 2.881,
+        "end": 3.082,
+        "estimated": true
+      },
+      {
+        "word": "specific",
+        "start": 3.082,
+        "end": 3.695,
+        "estimated": true
+      },
+      {
+        "word": "and",
+        "start": 3.695,
+        "end": 3.895,
+        "estimated": true
+      },
+      {
+        "word": "two",
+        "start": 3.895,
+        "end": 4.095,
+        "estimated": true
+      },
+      {
+        "word": "weeks",
+        "start": 4.095,
+        "end": 4.429,
+        "estimated": true
+      },
+      {
+        "word": "later",
+        "start": 4.429,
+        "end": 4.762,
+        "estimated": true
+      },
+      {
+        "word": "the",
+        "start": 4.762,
+        "end": 4.962,
+        "estimated": true
+      },
+      {
+        "word": "request",
+        "start": 4.962,
+        "end": 5.429,
+        "estimated": true
+      },
+      {
+        "word": "has",
+        "start": 5.429,
+        "end": 5.629,
+        "estimated": true
+      },
+      {
+        "word": "quietly",
+        "start": 5.629,
+        "end": 6.096,
+        "estimated": true
+      },
+      {
+        "word": "changed",
+        "start": 6.096,
+        "end": 6.71,
+        "estimated": true
+      }
+    ],
+    "placeholder": false,
+    "text": "You know the feeling. You agree to something clear and specific, and two weeks later the request has quietly changed.",
+    "source": "tts_api"
+  },
+  "uploaded_narration": {
+    "kind": "text",
+    "file": "tts_package.txt",
+    "orig_name": "narr_c469e640a7.txt"
+  },
+  "segments": [
+    {
+      "text": "You know the feeling.",
+      "start": 0.0,
+      "end": 1.281,
+      "words": [
+        {
+          "word": "You",
+          "start": 0.0,
+          "end": 0.2,
+          "estimated": true
+        },
+        {
+          "word": "know",
+          "start": 0.2,
+          "end": 0.467,
+          "estimated": true
+        },
+        {
+          "word": "the",
+          "start": 0.467,
+          "end": 0.667,
+          "estimated": true
+        },
+        {
+          "word": "feeling.",
+          "start": 0.667,
+          "end": 1.281,
+          "estimated": true
+        }
+      ],
+      "chapter": null,
+      "concepts": [],
+      "role": "HOOK_SIGNAL",
+      "role_confidence": 0.7,
+      "evidence": {
+        "has_source": false,
+        "has_limitation": false,
+        "year": null
+      },
+      "mg_candidates": [],
+      "segment_id": "seg_000",
+      "timing_mode": "estimated",
+      "emphasis_words": [],
+      "arc_position": 0.0,
+      "duration": 1.281
+    },
+    {
+      "text": "You agree to something clear and specific, and two weeks later the request has quietly changed.",
+      "start": 1.281,
+      "end": 6.71,
+      "words": [
+        {
+          "word": "You",
+          "start": 1.281,
+          "end": 1.481,
+          "estimated": true
+        },
+        {
+          "word": "agree",
+          "start": 1.481,
+          "end": 1.814,
+          "estimated": true
+        },
+        {
+          "word": "to",
+          "start": 1.814,
+          "end": 1.948,
+          "estimated": true
+        },
+        {
+          "word": "something",
+          "start": 1.948,
+          "end": 2.548,
+          "estimated": true
+        },
+        {
+          "word": "clear",
+          "start": 2.548,
+          "end": 2.881,
+          "estimated": true
+        },
+        {
+          "word": "and",
+          "start": 2.881,
+          "end": 3.082,
+          "estimated": true
+        },
+        {
+          "word": "specific,",
+          "start": 3.082,
+          "end": 3.695,
+          "estimated": true
+        },
+        {
+          "word": "and",
+          "start": 3.695,
+          "end": 3.895,
+          "estimated": true
+        },
+        {
+          "word": "two",
+          "start": 3.895,
+          "end": 4.095,
+          "estimated": true
+        },
+        {
+          "word": "weeks",
+          "start": 4.095,
+          "end": 4.429,
+          "estimated": true
+        },
+        {
+          "word": "later",
+          "start": 4.429,
+          "end": 4.762,
+          "estimated": true
+        },
+        {
+          "word": "the",
+          "start": 4.762,
+          "end": 4.962,
+          "estimated": true
+        },
+        {
+          "word": "request",
+          "start": 4.962,
+          "end": 5.429,
+          "estimated": true
+        },
+        {
+          "word": "has",
+          "start": 5.429,
+          "end": 5.629,
+          "estimated": true
+        },
+        {
+          "word": "quietly",
+          "start": 5.629,
+          "end": 6.096,
+          "estimated": true
+        },
+        {
+          "word": "changed.",
+          "start": 6.096,
+          "end": 6.71,
+          "estimated": true
+        }
+      ],
+      "chapter": null,
+      "concepts": [
+        "agreement"
+      ],
+      "role": "NEXT_WATCH",
+      "role_confidence": 0.95,
+      "evidence": {
+        "has_source": false,
+        "has_limitation": false,
+        "year": null
+      },
+      "mg_candidates": [],
+      "segment_id": "seg_001",
+      "timing_mode": "estimated",
+      "emphasis_words": [],
+      "arc_position": 0.191,
+      "duration": 5.429
+    }
+  ],
+  "timeline": {
+    "segments": [
+      {
+        "segment_id": "seg_000",
+        "start": 0.0,
+        "end": 1.281,
+        "duration": 1.281,
+        "voiceover_summary": "You know the feeling.",
+        "text": "You know the feeling.",
+        "role": "HOOK_SIGNAL",
+        "emotion": "intrigued",
+        "concepts": [],
+        "visual_intent": {
+          "motif": "waveform",
+          "concepts": [],
+          "tint": "red"
+        },
+        "asset_id": "as_city_rain_window",
+        "asset_name": "city_rain_window.png",
+        "asset_type": "image",
+        "fallback": null,
+        "text_overlay": null,
+        "text_style": null,
+        "motion": {
+          "type": "zoom_in",
+          "amount": 0.073,
+          "speed": 0.25,
+          "duration": 4.0
+        },
+        "transition": {
+          "type": "fade_from_black",
+          "duration": 0.9,
+          "state_change": 0
+        },
+        "music": {
+          "mood": "hook",
+          "duck": true
+        },
+        "sfx": {
+          "asset_id": "as_riser_d53a",
+          "at": 0.0,
+          "volume": 0.5
+        },
+        "evidence_status": {
+          "has_source": false,
+          "has_limitation": false,
+          "year": null
+        },
+        "confidence": 0.7,
+        "human_review_reason": "word timings are estimated",
+        "locked": false,
+        "chapter": null,
+        "words": [
+          {
+            "word": "You",
+            "start": 0.0,
+            "end": 0.2,
+            "estimated": true
+          },
+          {
+            "word": "know",
+            "start": 0.2,
+            "end": 0.467,
+            "estimated": true
+          },
+          {
+            "word": "the",
+            "start": 0.467,
+            "end": 0.667,
+            "estimated": true
+          },
+          {
+            "word": "feeling.",
+            "start": 0.667,
+            "end": 1.281,
+            "estimated": true
+          }
+        ],
+        "timing_mode": "estimated",
+        "motion_graphic": null
+      },
+      {
+        "segment_id": "seg_001",
+        "start": 1.281,
+        "end": 6.71,
+        "duration": 5.429,
+        "voiceover_summary": "You agree to something clear and specific, and two weeks later the request has quietly changed.",
+        "text": "You agree to something clear and specific, and two weeks later the request has quietly changed.",
+        "role": "NEXT_WATCH",
+        "emotion": "resolved",
+        "concepts": [
+          "agreement"
+        ],
+        "visual_intent": {
+          "motif": "document",
+          "concepts": [
+            "agreement"
+          ],
+          "tint": "bone"
+        },
+        "asset_id": "as_document_agreement_signed",
+        "asset_name": "document_agreement_signed.png",
+        "asset_type": "image",
+        "fallback": null,
+        "text_overlay": null,
+        "text_style": null,
+        "motion": {
+          "type": "pan_up",
+          "amount": 0.041,
+          "speed": 0.68,
+          "duration": 5.429
+        },
+        "transition": {
+          "type": "evidence_pivot",
+          "duration": 0.47,
+          "state_change": 2
+        },
+        "music": {
+          "mood": "resolve",
+          "duck": true
+        },
+        "sfx": null,
+        "evidence_status": {
+          "has_source": false,
+          "has_limitation": false,
+          "year": null
+        },
+        "confidence": 0.78,
+        "human_review_reason": "word timings are estimated",
+        "locked": false,
+        "chapter": null,
+        "words": [
+          {
+            "word": "You",
+            "start": 1.281,
+            "end": 1.481,
+            "estimated": true
+          },
+          {
+            "word": "agree",
+            "start": 1.481,
+            "end": 1.814,
+            "estimated": true
+          },
+          {
+            "word": "to",
+            "start": 1.814,
+            "end": 1.948,
+            "estimated": true
+          },
+          {
+            "word": "something",
+            "start": 1.948,
+            "end": 2.548,
+            "estimated": true
+          },
+          {
+            "word": "clear",
+            "start": 2.548,
+            "end": 2.881,
+            "estimated": true
+          },
+          {
+            "word": "and",
+            "start": 2.881,
+            "end": 3.082,
+            "estimated": true
+          },
+          {
+            "word": "specific,",
+            "start": 3.082,
+            "end": 3.695,
+            "estimated": true
+          },
+          {
+            "word": "and",
+            "start": 3.695,
+            "end": 3.895,
+            "estimated": true
+          },
+          {
+            "word": "two",
+            "start": 3.895,
+            "end": 4.095,
+            "estimated": true
+          },
+          {
+            "word": "weeks",
+            "start": 4.095,
+            "end": 4.429,
+            "estimated": true
+          },
+          {
+            "word": "later",
+            "start": 4.429,
+            "end": 4.762,
+            "estimated": true
+          },
+          {
+            "word": "the",
+            "start": 4.762,
+            "end": 4.962,
+            "estimated": true
+          },
+          {
+            "word": "request",
+            "start": 4.962,
+            "end": 5.429,
+            "estimated": true
+          },
+          {
+            "word": "has",
+            "start": 5.429,
+            "end": 5.629,
+            "estimated": true
+          },
+          {
+            "word": "quietly",
+            "start": 5.629,
+            "end": 6.096,
+            "estimated": true
+          },
+          {
+            "word": "changed.",
+            "start": 6.096,
+            "end": 6.71,
+            "estimated": true
+          }
+        ],
+        "timing_mode": "estimated",
+        "motion_graphic": null
+      }
+    ],
+    "review_flags": 2,
+    "target_ar": 1.7777777777777777,
+    "seed": 2971319179
+  },
+  "subtitles": null,
+  "render_result": {
+    "file": "/home/user/Auto-video/projects/pregen_textonly2_7b6fc6caed/final.mp4",
+    "duration": 6.8,
+    "width": 1920,
+    "height": 1080,
+    "size_mb": 2.7
+  },
+  "render_settings": {
+    "resolution": "1920x1080",
+    "fps": 30
+  },
+  "status": "done",
+  "events": [
+    {
+      "t": 1789236736.5324576,
+      "msg": "narration resolved: espeak_offline 6.7s (estimated)"
+    }
+  ]
+}

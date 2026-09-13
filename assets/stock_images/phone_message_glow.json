@@ -1,0 +1,22 @@
+{
+  "asset_id": "as_phone_message_glow",
+  "tags": [
+    "phone",
+    "message",
+    "screen",
+    "notification",
+    "desk",
+    "dark",
+    "closeup"
+  ],
+  "semantic_tags": [
+    "phone",
+    "message",
+    "attention",
+    "pressure"
+  ],
+  "source": "generated_starter",
+  "license_status": "owned",
+  "quality": 0.85,
+  "notes": "Starter library image generated locally at setup. Original, safe to delete or replace with your own stock."
+}
